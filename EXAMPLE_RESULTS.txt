@@ -1,0 +1,256 @@
+
+================================================================================
+OBJECT 1A_A: White Paper-Wrapped Object
+================================================================================
+
+YOUR DATA (Trial 3):
+"The object is a small, hand-sized solid form wrapped entirely in thin white 
+paper. Its overall shape is compact and rounded, somewhere between a squat 
+cylinder and a slightly flattened sphere... The white paper covering the object 
+is crinkled and irregular, with many visible wrinkles, creases, and fold lines..."
+
+WHAT THE ANALYSIS REVEALS:
+--------------------------------------------------------------------------------
+
+If you had 5 descriptions of this object from different trials, the PCA might show:
+
+PC1 (explains 65% of variance): TEXTURE vs. SHAPE emphasis
+  
+  High PC1 descriptions (focused on surface/texture):
+    - "crinkled white paper with irregular folds and creases"
+    - "textured surface with wrinkles catching light"
+    - "paper wrapping shows visible seams and ridges"
+  
+  Low PC1 descriptions (focused on shape/geometry):
+    - "compact rounded form, somewhat cylindrical"
+    - "small squat shape between cylinder and sphere"
+    - "hand-sized object with flattened top and bottom"
+
+  INTERPRETATION: The main way descriptions differ is whether they emphasize
+  the surface texture/material OR the underlying geometric shape.
+
+PC2 (explains 20% of variance): INTERIOR vs. EXTERIOR mention
+  
+  High PC2: Mentions the gray interior visible through gaps
+  Low PC2: Only describes external white paper wrapper
+  
+  INTERPRETATION: Secondary variation is whether people notice/mention the
+  interior structure showing through the paper.
+
+PC3-5 (explain 15% total): Other minor variations
+  - Specific measurements vs. general size comparisons
+  - Detailed vs. brief descriptions
+  - Hand interaction descriptions
+
+CUMULATIVE INSIGHT:
+  Together, PC1 + PC2 explain 85% of description variance. This means
+  nearly all the meaningful differences in how people describe this object
+  can be understood through just two dimensions:
+    1. Surface/texture focus vs. Shape/geometry focus (65%)
+    2. Noticing interior vs. only exterior (20%)
+
+================================================================================
+
+
+================================================================================
+COMPARING ACROSS TRIALS
+================================================================================
+
+TRIAL 1 (Memory ON) vs TRIAL 2 (Memory ON) vs TRIAL 3 (Memory OFF)
+
+SCENARIO 1: Memory Has No Effect
+--------------------------------------------------------------------------------
+Similarity Matrix:
+                Trial 1    Trial 2    Trial 3
+Trial 1          1.000      0.920      0.915
+Trial 2          0.920      1.000      0.925
+Trial 3          0.915      0.925      1.000
+
+Average PC1 Variance:
+  Trial 1: 58%
+  Trial 2: 56%
+  Trial 3: 57%
+
+INTERPRETATION:
+  - All trials are highly similar (similarity > 0.9)
+  - PC1 variance consistent across trials (~57%)
+  - Memory does NOT significantly affect semantic structure
+  - ChatGPT emphasizes same features regardless of memory setting
+
+SCENARIO 2: Memory Increases Consistency
+--------------------------------------------------------------------------------
+Similarity Matrix:
+                Trial 1    Trial 2    Trial 3
+Trial 1          1.000      0.950      0.720
+Trial 2          0.950      1.000      0.730
+Trial 3          0.720      0.730      1.000
+
+Average PC1 Variance:
+  Trial 1: 72%  (high = descriptions more aligned)
+  Trial 2: 75%  (high = descriptions more aligned)
+  Trial 3: 42%  (low = descriptions more diverse)
+
+INTERPRETATION:
+  - Trials 1 & 2 very similar (similarity ~0.95)
+  - Trial 3 different from both (similarity ~0.72)
+  - With memory: higher PC1 variance = more consistent emphasis
+  - Without memory: lower PC1 variance = more varied features mentioned
+  - Memory makes ChatGPT focus on similar semantic dimensions
+
+SCENARIO 3: Memory Changes Emphasis
+--------------------------------------------------------------------------------
+After examining high/low loading descriptions:
+
+Trial 1 & 2 (Memory ON):
+  PC1 primarily captures: Shape vs. Material
+  Most descriptions focus on geometric properties
+
+Trial 3 (Memory OFF):
+  PC1 primarily captures: Color vs. Texture
+  Descriptions more balanced between different feature types
+
+INTERPRETATION:
+  - Memory doesn't just affect consistency, it affects WHAT is emphasized
+  - With memory: ChatGPT develops a "preference" for geometric descriptions
+  - Without memory: More diverse feature focus (color, texture, shape equally)
+
+================================================================================
+
+
+================================================================================
+HUMAN vs CHATGPT COMPARISON
+================================================================================
+
+SCENARIO 1: Humans Are More Diverse
+--------------------------------------------------------------------------------
+Average PC1 Variance:
+  Human: 35% (low variance = diverse emphasis)
+  ChatGPT Trial 1: 68% (high variance = aligned emphasis)
+  ChatGPT Trial 2: 72%
+  ChatGPT Trial 3: 65%
+
+t-SNE Visualization shows:
+  - Human descriptions spread across 2D space
+  - ChatGPT descriptions form tighter clusters
+
+INTERPRETATION:
+  - Humans vary more in what features they attend to
+  - ChatGPT more consistent/stereotyped in description style
+  - Individual humans have unique perspectives
+  - ChatGPT follows similar patterns across generations
+
+SCENARIO 2: Different Semantic Axes
+--------------------------------------------------------------------------------
+Human Descriptions:
+  PC1: Functional properties vs. Visual appearance
+  High: "looks like it could be used for...", "seems designed to..."
+  Low: "red surface with smooth texture"
+
+ChatGPT Descriptions:
+  PC1: Shape geometry vs. Surface material
+  High: "cylindrical form with curved edges"
+  Low: "paper wrapping with visible creases"
+
+INTERPRETATION:
+  - Humans and ChatGPT use fundamentally different semantic dimensions
+  - Humans include functional/purposive language
+  - ChatGPT focuses on objective physical properties
+  - This suggests different conceptual frameworks for object understanding
+
+SCENARIO 3: Similar But Scaled Differently
+--------------------------------------------------------------------------------
+Both Humans and ChatGPT show:
+  PC1: Shape vs. Texture emphasis
+
+But distributions differ:
+  Humans: 50% shape-focused, 50% texture-focused (balanced)
+  ChatGPT: 80% shape-focused, 20% texture-focused (biased)
+
+INTERPRETATION:
+  - Same semantic dimension exists in both
+  - But ChatGPT has systematic bias toward shape descriptions
+  - Humans more balanced in feature selection
+  - Training data or model architecture may bias ChatGPT's attention
+
+================================================================================
+
+
+================================================================================
+PRACTICAL RESEARCH APPLICATIONS
+================================================================================
+
+USE CASE 1: Testing Shape Bias
+--------------------------------------------------------------------------------
+If you're studying whether models have a "shape bias" like children:
+
+1. Check if PC1 for ChatGPT descriptions is consistently Shape vs. Non-shape
+2. Compare PC1 variance to humans
+3. Higher PC1 variance in ChatGPT = stronger shape bias
+
+Result: "ChatGPT shows 72% variance along shape vs. texture dimension,
+        compared to 35% for humans, suggesting stronger shape bias"
+
+USE CASE 2: Prompt Engineering
+--------------------------------------------------------------------------------
+If you want to make ChatGPT describe more like humans:
+
+1. Identify which semantic axes differ
+2. Add to prompt: "Describe both the shape AND the material/texture equally"
+3. Re-run analysis to see if PC1 variance decreases
+
+Result: Targeted prompts to reduce systematic biases
+
+USE CASE 3: Model Comparison
+--------------------------------------------------------------------------------
+Compare GPT-4 vs. Claude vs. Human descriptions:
+
+1. Load descriptions from each into trial_comparison.py
+2. Check similarity matrix and t-SNE
+3. See which model clusters closer to humans
+
+Result: "Claude descriptions show 0.85 similarity to humans, compared to
+        GPT-4's 0.72, suggesting better alignment with human language"
+
+USE CASE 4: Understanding Memorization
+--------------------------------------------------------------------------------
+Your specific question: Does GPT remember previous descriptions?
+
+Analysis approach:
+1. Compare Trial 1 (early in conversation) vs Trial 2 (later)
+2. If similarity > 0.95, descriptions are nearly identical
+3. Check if same semantic dimensions dominate
+
+Result: Can quantify how much memory affects consistency
+
+================================================================================
+
+
+================================================================================
+SUMMARY: What This Analysis Gives You
+================================================================================
+
+1. SEMANTIC DIMENSIONS
+   - What are the main axes of variation in descriptions?
+   - Shape vs material? Color vs texture? Global vs local?
+
+2. CONSISTENCY METRICS
+   - How aligned are descriptions within a trial?
+   - High PC1 variance = descriptions vary along one main axis
+   - Low PC1 variance = multidimensional variation
+
+3. TRIAL COMPARISONS
+   - Does memory affect description patterns?
+   - Quantitative similarity scores between conditions
+
+4. MODEL-HUMAN GAP
+   - Where do ChatGPT and humans differ?
+   - Same semantic axes or fundamentally different?
+
+5. ACTIONABLE INSIGHTS
+   - Identify systematic biases
+   - Guide prompt engineering
+   - Test psychological hypotheses about object perception
+
+All backed by rigorous PCA analysis and visualizations!
+================================================================================
+

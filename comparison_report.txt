@@ -1,0 +1,51 @@
+TRIAL 3 vs TRIAL 1 COMPARISON REPORT
+======================================================================
+
+Average similarity: 0.701
+Trial 3 descriptions: 35
+Trial 1 descriptions: 35
+Common objects: 35
+
+Interpretation: MODERATELY SIMILAR - Some differences between trials
+
+Per-object similarities:
+----------------------------------------------------------------------
+  4D_D      : 0.895
+  4A_A      : 0.889
+  2D_D      : 0.874
+  3B_B      : 0.873
+  3A_A      : 0.859
+  2A_A      : 0.859
+  3D_D      : 0.848
+  6F_F      : 0.832
+  2F_F      : 0.829
+  1C_C      : 0.824
+  6C_C      : 0.821
+  6D_D      : 0.819
+  2C_C      : 0.816
+  1A_A      : 0.811
+  5D_D      : 0.806
+  6A_A      : 0.805
+  3C_C      : 0.799
+  2E_E      : 0.798
+  5A_A      : 0.771
+  7E_E      : 0.770
+  7D_D      : 0.770
+  5C_C      : 0.763
+  7B_B      : 0.763
+  7A_A      : 0.762
+  3E_E      : 0.762
+  5B_B      : 0.737
+  7C_C      : 0.731
+  4B_B      : 0.713
+  1D_D      : 0.709
+  4E_E      : 0.703
+  2B_B      : 0.681
+  6E_E      : 0.658
+  4C_C      : 0.638
+  1B_B      : 0.568
+  6B_B      : 0.520
+
+======================================================================
+Most similar object: 4D_D (similarity: 0.895)
+Least similar object: 6B_B (similarity: 0.520)

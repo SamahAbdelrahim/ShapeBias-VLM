@@ -4,7 +4,9 @@ import os
 import openai
 import numpy as np
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.environ.get("OPENAI_API_KEY")
+if not openai.api_key:
+    raise ValueError("OPENAI_API_KEY environment variable is not set")
 
 def get_embedding(text, model="text-embedding-3-large"):
     response = openai.embeddings.create(input=text, model=model)

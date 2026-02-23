@@ -1,0 +1,212 @@
+[
+  {
+    "object_number": "1A",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.8194
+  },
+  {
+    "object_number": "1B",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.7007
+  },
+  {
+    "object_number": "1C",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.7949
+  },
+  {
+    "object_number": "1D",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.7851
+  },
+  {
+    "object_number": "2A",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.8476
+  },
+  {
+    "object_number": "2B",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.7826
+  },
+  {
+    "object_number": "2C",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.715
+  },
+  {
+    "object_number": "2D",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.8188
+  },
+  {
+    "object_number": "2E",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.7113
+  },
+  {
+    "object_number": "2F",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.821
+  },
+  {
+    "object_number": "3A",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.8945
+  },
+  {
+    "object_number": "3B",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.8431
+  },
+  {
+    "object_number": "3C",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.7873
+  },
+  {
+    "object_number": "3D",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.8622
+  },
+  {
+    "object_number": "3E",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.743
+  },
+  {
+    "object_number": "4A",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.8783
+  },
+  {
+    "object_number": "4B",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.6679
+  },
+  {
+    "object_number": "4C",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.6098
+  },
+  {
+    "object_number": "4D",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.8461
+  },
+  {
+    "object_number": "4E",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.7249
+  },
+  {
+    "object_number": "5A",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.7871
+  },
+  {
+    "object_number": "5B",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.7321
+  },
+  {
+    "object_number": "5C",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.7493
+  },
+  {
+    "object_number": "5D",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.8156
+  },
+  {
+    "object_number": "6A",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.8472
+  },
+  {
+    "object_number": "6B",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.5515
+  },
+  {
+    "object_number": "6C",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.8818
+  },
+  {
+    "object_number": "6D",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.7516
+  },
+  {
+    "object_number": "6E",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.5692
+  },
+  {
+    "object_number": "6F",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.8394
+  },
+  {
+    "object_number": "7A",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.7781
+  },
+  {
+    "object_number": "7B",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.8042
+  },
+  {
+    "object_number": "7C",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.692
+  },
+  {
+    "object_number": "7D",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.8149
+  },
+  {
+    "object_number": "7E",
+    "trial_a": "trial1_winter_26",
+    "trial_b": "trial3_winter_26",
+    "cosine_similarity": 0.7952
+  }
+]

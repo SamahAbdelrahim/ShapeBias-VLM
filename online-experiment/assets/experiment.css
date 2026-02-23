@@ -1,0 +1,83 @@
+
+.option_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 500px;
+    width: 90vw;
+    min-height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.option {
+    font-size: 24px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.jspsych-survey-multi-choice-question span.required {
+    display: none !important;
+}
+.jspsych-content {
+    margin-top: -10px !important; /* Move everything up */
+    padding-top: 0px ; /* !important; */ 
+}
+
+.jspsych-display-element {
+    padding-top: 30px !important; /* Reduce space at the top */
+    margin-top: 0px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Push content to the top */
+    align-items: center; /* Keep it centered horizontally */
+    min-height: 100vh; /* Ensures the layout is still responsive */
+    min-width: 600px;  /* Prevents shrinking */
+    max-width: 95%;
+    width: 95vw;
+    min-width: 600px;  /* Reduced from 850px to avoid forcing width */
+    background: white;
+    padding: 20px 30px; /* Slightly reduced padding */
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;  /* Centering */
+    position: relative;
+}
+
+/* Adjust the slider question text */
+.slider-question {
+    font-size: 16px; /* Slightly smaller */
+    font-weight: 500;
+    color: #333;
+    white-space: nowrap; /* Keeps the sentence in one line */
+    text-align: center;
+    margin-bottom: 5px; /* Reduce space between question & slider */
+}
+
+
+/* Fix slider labels to prevent overflow */
+.jspsych-sliders-response .jspsych-slider-label {
+    display: inline-block;  /* Keeps labels in line */
+    width: auto; 
+    min-width: 80px; /* Prevents overflow */
+    text-align: center;  /* Centers text under the slider */
+    font-size: 18px;
+    color: #555;
+    white-space: nowrap;  /* Prevents labels from wrapping awkwardly */
+}
+
+/* Ensure slider itself is nicely positioned */
+/* Ensure slider is always the same width */
+.jspsych-sliders-response input[type="range"] {
+    width: 90%; /* Adjust width as needed */
+    max-width: 500px; /* Ensures consistency */
+    margin: 10px auto; /* Keeps spacing uniform */
+}
+
+
+

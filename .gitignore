@@ -1,2 +1,7 @@
 data/ 
 .gptapi.log
+embeddings/output/mpl_cache/
+mongo_auth.json
+.Rproj.user
+.gitignore
+online-experiment/videos_of_objects/*

@@ -12,10 +12,10 @@ function logExpData1(data) {
         internal_node_id: parseFloat(data.internal_node_id), // Parse string to number
         subject: data.subject_id,
         response: JSON.stringify(data.response),
-        pic: data.pic, 
+        pic: data.pic,
         block: data.block,
         study_id: data.study_id,
-        stimulus: data.stimulus, 
+        stimulus: data.stimulus,
         session_id: data.session_id,
         video1: data.video1,
         video2: data.video2,
@@ -28,6 +28,8 @@ function logExpData1(data) {
         rightObject: data.rightObject,
         left_video: data.left_video,
         right_video: data.right_video,
+        object_id: data.object_id,
+        video_file: data.video_file,
     };
 
     return fetch('/api/log', {

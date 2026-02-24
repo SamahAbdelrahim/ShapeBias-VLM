@@ -193,12 +193,12 @@ document.addEventListener('DOMContentLoaded', function () {
             return videoFiles;
         } catch (error) {
             console.error('Error fetching video files:', error);
-            console.log('Falling back to default video list...');
-            // Fallback to a smaller set if API fails
-            return [
-                "File 2.mp4", "File 3.mp4", "File 4.mp4", "File 5.mp4", "File 6.mp4",
-                "File 7.mp4", "File 8.mp4", "File 9.mp4", "File 10.mp4"
-            ];
+            console.log('Live serve / no API: falling back to full 35 objects (1A–7E).');
+            var ids = [];
+            for (var n = 1; n <= 7; n++) {
+                ['A','B','C','D','E'].forEach(function(l) { ids.push(String(n) + l + '.mp4'); });
+            }
+            return ids;
         }
     }
 
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var trial1 = {
             type: jsPsychInstructions,
         pages: [
-            '<div style="text-align: center; margin-bottom: 10px;"><img src="/general_assets/stanford.png"></div>' +
+            '<div style="text-align: center; margin-bottom: 10px;"><img src="' + (window.ASSETS_BASE || '../assets') + '/stanford.png"></div>' +
             '<div style="text-align: center; margin: 0 auto; max-width: 600px; font-size: 18px; line-height: 1.5; color: #333;">' +
             '<p>By answering the following questions, you are participating in a study being performed by cognitive scientists in the Stanford Department of Psychology.</p>' +
             '<p>If you have questions about this research, please contact us at <a href="mailto:languagecoglab@gmail.com" style="color: #007bff; text-decoration: none;">languagecoglab@gmail.com</a>.</p>' +
@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <div style="display: flex; justify-content: center; align-items: flex-start; gap: 60px; margin: 40px 0;">
                                 <div style="text-align: center;">
                                     <div style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #8C1515;">Object A</div>
-                                    <video id="video1" src="/general_assets/videos_familiarobjs/${leftVideo}" 
+                                    <video id="video1" src="${(window.ASSETS_BASE || '../assets')}/videos_of_objs/${leftVideo}" 
                                            style="width: 350px; height: 250px; object-fit: cover; border-radius: 8px; border: 2px solid #8C1515;"
                                            muted loop>
                                     </video>
@@ -340,7 +340,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 
                                 <div style="text-align: center;">
                                     <div style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #8C1515;">Object B</div>
-                                    <video id="video2" src="/general_assets/videos_familiarobjs/${rightVideo}" 
+                                    <video id="video2" src="${(window.ASSETS_BASE || '../assets')}/videos_of_objs/${rightVideo}" 
                                            style="width: 350px; height: 250px; object-fit: cover; border-radius: 8px; border: 2px solid #8C1515;"
                                            muted loop>
                                     </video>
@@ -556,7 +556,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <div style="display: flex; justify-content: center; align-items: flex-start; gap: 60px; margin: 40px 0;">
                                 <div style="text-align: center;">
                                     <div style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: ${isLeftVideoChosen ? '#28a745' : '#8C1515'};">${leftVideoLabel}</div>
-                                    <video id="video1" src="/general_assets/videos_familiarobjs/${leftVideo}" 
+                                    <video id="video1" src="${(window.ASSETS_BASE || '../assets')}/videos_of_objs/${leftVideo}" 
                                            style="width: 350px; height: 250px; object-fit: cover; border-radius: 8px; border: ${leftVideoBorder};"
                                            muted autoplay loop>
                                     </video>
@@ -564,7 +564,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 
                                 <div style="text-align: center;">
                                     <div style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: ${!isLeftVideoChosen ? '#28a745' : '#8C1515'};">${rightVideoLabel}</div>
-                                    <video id="video2" src="/general_assets/videos_familiarobjs/${rightVideo}" 
+                                    <video id="video2" src="${(window.ASSETS_BASE || '../assets')}/videos_of_objs/${rightVideo}" 
                                            style="width: 350px; height: 250px; object-fit: cover; border-radius: 8px; border: ${rightVideoBorder};"
                                            muted autoplay loop>
                                     </video>
@@ -643,7 +643,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var goodbye = {
             type: jsPsychInstructions,
         pages: [
-            '<div style="text-align: center; margin: 50px;"><img src="/general_assets/stanford.png"></div>' +
+            '<div style="text-align: center; margin: 50px;"><img src="' + (window.ASSETS_BASE || '../assets') + '/stanford.png"></div>' +
             '<div style="text-align: center; margin: 0 auto; max-width: 600px; font-size: 30px;">' +
             '<p> <b>Thank you for your participation and we appreciate you helping science. </b> </p>' +
             '<p> please click next to get redirected ...  </p>' +

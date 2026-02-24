@@ -4,4 +4,5 @@ embeddings/output/mpl_cache/
 mongo_auth.json
 .Rproj.user
 .gitignore
-online-experiment/videos_of_objects/*
+online-experiment/video_experiment/videos/*
+online-experiment/assets/videos_of_objs/*
